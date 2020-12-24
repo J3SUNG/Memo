@@ -1,23 +1,23 @@
 import React from "react";
-import Greeting from "./function/Greeting";
+// import Greeting from "./function/Greeting";
 
 function App() {
   return (
     <div>
-      <Greeting />
+      {/* <Greeting /> */}
 
-      <div class="js-clock">
+      <div className="js-clock">
         <h1>00:00</h1>
       </div>
-      <form class="js-form form">
+      <form className="js-form form">
         <input type="text" placeholder="What is your name?" />
       </form>
-      <div class="js-greetings greetings"></div>
-      <form class="js-toDoForm">
+      <div className="js-greetings greetings"></div>
+      <form className="js-toDoForm">
         <input type="text" placeholder="write a to do" />
       </form>
-      <ul class="js-toDoList"></ul>
-      <span class="js-weather"></span>
+      <ul className="js-toDoList"></ul>
+      <span className="js-weather"></span>
     </div>
   );
 }
