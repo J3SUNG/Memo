@@ -1,10 +1,11 @@
 import React from "react";
-// import Greeting from "./function/Greeting";
+import Greeting from "./function/Greeting";
+import "./App.css";
 
 function App() {
   return (
     <div>
-      {/* <Greeting /> */}
+      <Greeting />
 
       <div className="js-clock">
         <h1>00:00</h1>
