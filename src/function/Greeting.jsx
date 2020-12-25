@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 function Greeting() {
   const USER = "currentUser";
@@ -8,30 +8,26 @@ function Greeting() {
   let input_style = "display_none";
   let greet_style = "display_none";
 
-  function saveName(text) {
+  const saveName = (text) => {
     localStorage.setItem(USER, text);
-  }
+  };
 
-  function askForName() {
-    input_style = "display_block";
-  }
-
-  function showGreeting(text) {
+  const showGreeting = (text) => {
     input_style = "display_none";
     greet_style = "display_block";
     if (name !== text) {
       setName(text);
     }
-  }
+  };
 
-  function loadName() {
+  const loadName = () => {
     const currentUser = localStorage.getItem(USER);
     if (currentUser === null) {
-      askForName();
+      input_style = "display_block";
     } else {
       showGreeting(currentUser);
     }
-  }
+  };
 
   const onSubmitForm = (e) => {
     e.preventDefault();
@@ -47,6 +43,8 @@ function Greeting() {
   };
 
   loadName();
+  // useEffect(() => {
+  // }, []);
 
   return (
     <>
