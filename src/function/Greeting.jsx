@@ -43,8 +43,6 @@ function Greeting() {
   };
 
   loadName();
-  // useEffect(() => {
-  // }, []);
 
   return (
     <>
