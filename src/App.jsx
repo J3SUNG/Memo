@@ -1,15 +1,14 @@
 import React from "react";
 import Greeting from "./function/Greeting";
+import Clock from "./function/Clock";
 import "./App.css";
 
 function App() {
   return (
     <div>
       <Greeting />
+      <Clock />
 
-      <div className="js-clock">
-        <h1>00:00</h1>
-      </div>
       <form className="js-form form">
         <input type="text" placeholder="What is your name?" />
       </form>

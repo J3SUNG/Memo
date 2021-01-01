@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 
-function Greeting() {
+const Greeting = () => {
   const USER = "currentUser";
   const [name, setName] = useState("");
   const [value, setValue] = useState("");
@@ -57,6 +57,6 @@ function Greeting() {
       <div className={greet_style}>Hello {name}</div>
     </>
   );
-}
+};
 
 export default Greeting;
