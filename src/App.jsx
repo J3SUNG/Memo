@@ -1,11 +1,13 @@
 import React from "react";
 import Greeting from "./function/Greeting";
 import Clock from "./function/Clock";
+import Background from "./function/Background";
 import "./App.css";
 
 function App() {
   return (
     <div>
+      <Background />
       <Greeting />
       <Clock />
 
