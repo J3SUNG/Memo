@@ -5,6 +5,8 @@ import Background from "./function/Background";
 import "./App.css";
 
 function App() {
+  // document.body.style.backgroundImage = `url(${bg})`;
+  // document.body.style.backgroundImage = "url(/static/media/1.dcd9e70b.jpg)";
   return (
     <div>
       <Background />
