@@ -20,12 +20,15 @@ const genRandom = () => {
   return number + 1;
 };
 
-const Background = () => {
-  const number = genRandom();
-  const image = bg[number];
+const addStyle = (image) => {
   document.body.style.backgroundImage = `url(${image})`;
   document.body.style.backgroundColor = `#2c3e50`;
   document.body.className = "bgImage";
+};
+
+const Background = () => {
+  const number = genRandom();
+  addStyle(bg[number]);
 
   return <></>;
 };

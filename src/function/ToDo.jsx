@@ -63,9 +63,9 @@ function loadToDos() {
   }
 }
 
-function init() {
+function ToDo() {
   loadToDos();
   toDoForm.addEventListener("submit", handleSubmit);
 }
 
-init();
+export default ToDo;

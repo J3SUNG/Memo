@@ -2,6 +2,7 @@ import React from "react";
 import Greeting from "./function/Greeting";
 import Clock from "./function/Clock";
 import Background from "./function/Background";
+import ToDo from "./function/ToDo";
 import "./App.css";
 
 function App() {
@@ -13,9 +14,6 @@ function App() {
       <Greeting />
       <Clock />
 
-      <form className="js-form form">
-        <input type="text" placeholder="What is your name?" />
-      </form>
       <div className="js-greetings greetings"></div>
       <form className="js-toDoForm">
         <input type="text" placeholder="write a to do" />
