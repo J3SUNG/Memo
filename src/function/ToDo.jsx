@@ -1,29 +1,24 @@
-import React, { useState, useRef } from "react";
-import ToDoList from "./ToDoList";
-// const toDoForm = document.querySelector(".js-toDoForm");
-// const toDoInput = toDoForm.querySelector("input");
+import React, { useState, useRef, useEffect } from "react";
 
 const ToDo = () => {
   const [value, setValue] = useState("");
+  const [update, setUpdate] = useState(1);
   const inputRef = useRef(null);
   const ulRef = useRef(null);
   const TODOS_LS = "toDos";
   let toDos = [];
 
-  // // const filterFn = (toDo) => {
-  // //   return toDo.id === 1;
-  // // };
-
-  // const deleteToDo = (event) => {
-  //   const btn = event.target;
-  //   const li = btn.parentNode;
-  //   ulRef.removeChild(li);
-  //   const cleanToDos = toDos.filter(function (toDo) {
-  //     return toDo.id !== parseInt(li.id);
-  //   });
-  //   toDos = cleanToDos;
-  //   saveToDos();
-  // };
+  const deleteToDo = (event) => {
+    const btn = event.target;
+    const li = btn.parentNode;
+    const cleanToDos = toDos.filter(function (toDo) {
+      return toDo.id !== parseInt(li.id);
+    });
+    toDos = cleanToDos;
+    setUpdate(update * -1);
+    setValue("");
+    saveToDos();
+  };
 
   const saveToDos = () => {
     localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
@@ -71,6 +66,8 @@ const ToDo = () => {
     const currentValue = value;
     paintToDo(currentValue);
 
+    setUpdate(update * -1);
+    setValue("");
     inputRef.current.focus();
   };
 
@@ -78,11 +75,19 @@ const ToDo = () => {
     setValue(e.target.value);
   };
 
+  // useEffect(() => {
+  //   forceUpdate();
+  // }, [toDos]);
+
   loadToDos();
-  console.log(toDos[0].id);
-  console.log(toDos[0].text);
+
   const list = toDos.map((toDo, index) => (
-    <ToDoList key={index} id={toDo.id} text={toDo.text}></ToDoList>
+    <li key={index} id={toDo.id}>
+      {toDo.text}
+      <button onClick={deleteToDo} className="delBtn">
+        X
+      </button>
+    </li>
   ));
 
   return (
