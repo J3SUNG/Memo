@@ -2,7 +2,7 @@ import React from "react";
 import Greeting from "./function/Greeting";
 import Clock from "./function/Clock";
 import Background from "./function/Background";
-// import ToDo from "./function/ToDo";
+import ToDo from "./function/ToDo";
 import "./App.css";
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
       <Background />
       <Greeting />
       <Clock />
+      <ToDo />
 
       <ul className="js-toDoList"></ul>
       <span className="js-weather"></span>
