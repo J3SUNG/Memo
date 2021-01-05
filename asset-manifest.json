@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/J3SUNG/memo/static/css/main.25be6ad2.chunk.css",
+    "main.js": "/J3SUNG/memo/static/js/main.cd465167.chunk.js",
+    "main.js.map": "/J3SUNG/memo/static/js/main.cd465167.chunk.js.map",
+    "runtime-main.js": "/J3SUNG/memo/static/js/runtime-main.5a89afcf.js",
+    "runtime-main.js.map": "/J3SUNG/memo/static/js/runtime-main.5a89afcf.js.map",
+    "static/js/2.830528cd.chunk.js": "/J3SUNG/memo/static/js/2.830528cd.chunk.js",
+    "static/js/2.830528cd.chunk.js.map": "/J3SUNG/memo/static/js/2.830528cd.chunk.js.map",
+    "index.html": "/J3SUNG/memo/index.html",
+    "static/css/main.25be6ad2.chunk.css.map": "/J3SUNG/memo/static/css/main.25be6ad2.chunk.css.map",
+    "static/js/2.830528cd.chunk.js.LICENSE.txt": "/J3SUNG/memo/static/js/2.830528cd.chunk.js.LICENSE.txt",
+    "static/media/1.dcd9e70b.jpg": "/J3SUNG/memo/static/media/1.dcd9e70b.jpg",
+    "static/media/2.4895f6b1.jpg": "/J3SUNG/memo/static/media/2.4895f6b1.jpg",
+    "static/media/3.28d25323.jpg": "/J3SUNG/memo/static/media/3.28d25323.jpg",
+    "static/media/4.2362dd7d.jpg": "/J3SUNG/memo/static/media/4.2362dd7d.jpg",
+    "static/media/5.5ffebbf2.jpg": "/J3SUNG/memo/static/media/5.5ffebbf2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a89afcf.js",
+    "static/js/2.830528cd.chunk.js",
+    "static/css/main.25be6ad2.chunk.css",
+    "static/js/main.cd465167.chunk.js"
+  ]
+}
