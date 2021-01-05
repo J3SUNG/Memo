@@ -21,7 +21,14 @@ const genRandom = () => {
 };
 
 const addStyle = (image) => {
-  document.body.style.background = `url(${image}) no-repeat center center fixed`;
+  document.body.style.background = `url(${image}) no-repeat fixed`;
+  document.body.style.backgroundColor = `#2c3e50`;
+  document.body.style.margin = `0`;
+  document.body.style.padding = `0`;
+  document.body.style.minWidth = `100%`;
+  document.body.style.minHeight = `100%`;
+  document.body.style.backgroundSize = `cover`;
+  document.body.style.backgroundPosition = `center`;
 };
 
 const Background = () => {
