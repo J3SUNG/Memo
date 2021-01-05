@@ -46,15 +46,16 @@ const Greeting = () => {
 
   return (
     <>
-      <form className={input_style} onSubmit={onSubmitForm}>
+      <form className={input_style + " form"} onSubmit={onSubmitForm}>
         <input
+          className="greetingInput"
           ref={inputRef}
-          placeholder="What is your name?"
+          placeholder="Type your name here"
           onChange={onChangeInput}
           value={value}
         />
       </form>
-      <div className={greet_style}>Hello {name}</div>
+      <div className={greet_style + " greetingText"}>Hello {name}</div>
     </>
   );
 };
