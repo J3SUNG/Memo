@@ -54,7 +54,7 @@ const Weather = () => {
 
   loadCoords();
 
-  return <div>{weather}</div>;
+  return <div className="footer">{weather}</div>;
 };
 
 export default Weather;
