@@ -35,13 +35,9 @@ const Clock = () => {
   }, [seconds]);
 
   return (
-    <>
-      <div className="js-clock">
-        <h1>
-          {hours}:{minutes}:{seconds}
-        </h1>
-      </div>
-    </>
+    <h1 className="clock">
+      {hours}:{minutes}:{seconds}
+    </h1>
   );
 };
 

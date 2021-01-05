@@ -30,7 +30,14 @@ const Background = () => {
   const number = genRandom();
   addStyle(bg[number]);
 
-  return <></>;
+  return (
+    <>
+      <link
+        href="https://fonts.googleapis.com/css?family=Jua"
+        rel="stylesheet"
+      />
+    </>
+  );
 };
 
 export default Background;

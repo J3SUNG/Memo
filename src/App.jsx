@@ -10,8 +10,8 @@ function App() {
   return (
     <div>
       <Background />
-      <Greeting />
       <Clock />
+      <Greeting />
       <ToDo />
       <Weather />
     </div>
