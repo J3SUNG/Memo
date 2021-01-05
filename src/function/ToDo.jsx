@@ -25,22 +25,7 @@ const ToDo = () => {
   };
 
   const paintToDo = (text) => {
-    // let id = null;
-    // const delBtn = <button>X</button>;
-    // const span = <span>{text}</span>;
-    // const li = (
-    //   <li>
-    //     {id}
-    //     {span}
-    //     {delBtn}
-    //   </li>
-    // );
     const newId = toDos.length + 1;
-    // delBtn.addEventListener("click", deleteToDo);
-    // span.innerText = text;
-    // li.appendChild(span);
-    // li.appendChild(delBtn);
-    // ulRef.appendChild(li);
     const toDoObj = {
       text: text,
       id: newId,
@@ -75,15 +60,11 @@ const ToDo = () => {
     setValue(e.target.value);
   };
 
-  // useEffect(() => {
-  //   forceUpdate();
-  // }, [toDos]);
-
   loadToDos();
 
   const list = toDos.map((toDo, index) => (
-    <li key={index} id={toDo.id}>
-      {toDo.text}
+    <li key={index} id={toDo.id} className="toDoLi">
+      <div className="toDoText">{toDo.text}</div>
       <button onClick={deleteToDo} className="delBtn">
         X
       </button>
@@ -92,15 +73,20 @@ const ToDo = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form className="toDoForm" onSubmit={handleSubmit}>
         <input
+          className="toDoInput"
           ref={inputRef}
           onChange={onChangeInput}
           value={value}
-          placeholder="write a to do"
+          placeholder="write a memo"
         />
       </form>
-      <ul ref={ulRef}>{list}</ul>
+      <div className="toDoList">
+        <ul ref={ulRef} className="toDoUl">
+          {list}
+        </ul>
+      </div>
     </>
   );
 };

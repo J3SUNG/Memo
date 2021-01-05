@@ -1,7 +1,20 @@
+/* App.jsx */
 body {
   color: white;
 }
 
+/* clock */
+.clock {
+  font-family: "Jua", sans-serif;
+  text-shadow: -3px 0 #000, 0 3px #000, 3px 0 #000, 0 -3px #000;
+  font-size: 80px;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  text-align: center;
+  color: burlywood;
+}
+
+/* Greeting.jsx */
 .input_style {
   display: none;
 }
@@ -18,23 +31,9 @@ body {
   display: block;
 }
 
-.clock {
-  font-family: "Jua", sans-serif;
-  text-shadow: -3px 0 #000, 0 3px #000, 3px 0 #000, 0 -3px #000;
-  font-size: 100px;
-  margin-top: 10%;
-  margin-bottom: 1%;
-  text-align: center;
-  color: burlywood;
-}
-
-.form {
-  text-align: center;
-}
-
 .greetingInput {
-  background-color: rgba(0, 0, 0, 0.2);
-  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 40px;
   font-family: "Jua", sans-serif;
   text-align: center;
   color: gainsboro;
@@ -50,4 +49,45 @@ body {
 
 ::placeholder {
   color: gainsboro;
+}
+
+/* ToDo.jsx */
+.toDoForm {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.toDoInput {
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 30px;
+  font-family: "Jua", sans-serif;
+  text-align: center;
+  color: gainsboro;
+}
+
+.toDoText {
+  display: inline;
+  margin-right: 10px;
+}
+
+.toDoLi {
+  margin-top: 2%;
+  font-size: 30px;
+  font-family: "Jua", sans-serif;
+  list-style: none;
+}
+
+.toDoUl {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.toDoList {
+  margin-top: 3%;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 50%;
+  padding: 0;
 }
