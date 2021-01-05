@@ -46,7 +46,7 @@ const Greeting = () => {
 
   return (
     <>
-      <form className={input_style} onSubmit={onSubmitForm}>
+      <form className={input_style + " greetingForm"} onSubmit={onSubmitForm}>
         <input
           className="greetingInput"
           ref={inputRef}

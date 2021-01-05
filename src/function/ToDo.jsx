@@ -72,7 +72,7 @@ const ToDo = () => {
   ));
 
   return (
-    <>
+    <div className="toDo">
       <form className="toDoForm" onSubmit={handleSubmit}>
         <input
           className="toDoInput"
@@ -87,7 +87,7 @@ const ToDo = () => {
           {list}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
