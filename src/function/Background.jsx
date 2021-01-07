@@ -21,6 +21,7 @@ const genRandom = () => {
 };
 
 const addStyle = (image) => {
+  document.body.className = `bgImage`;
   document.body.style.background = `url(${image}) no-repeat fixed`;
   document.body.style.backgroundColor = `#2c3e50`;
   document.body.style.margin = `0`;
